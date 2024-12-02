@@ -40,7 +40,7 @@ class CarWashStation:
         return round((numerator / self.distance_from_center), 1)
 
     def wash_single_car(self, car: Car) -> None:
-        if self.clean_power >= car.clean_mark:
+        if self.clean_power > car.clean_mark:
             transitional_variable = self.clean_power
             car.clean_mark = transitional_variable
 
